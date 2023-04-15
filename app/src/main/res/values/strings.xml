@@ -2,17 +2,15 @@
     <string name="app_name">Hover</string>
 
     <!-- Login & Registration Items -->
-    <string name="email">Email</string>
-    <string name="register">Register</string>
-    <string name="email_hint">Example@someone.com</string>
+    <string name="name_hint">Full Name</string>
+    <string name="username_hint">Username</string>
     <string name="password_hint">Password</string>
-    <string name="login_text">Login</string>
-    <string name="new_user">New User? Register</string>
-    <string name="existing_user">Already Registered? Login</string>
-    <string name="name">First Name</string>
-    <string name="surname">Surname</string>
-    <string name="back">Back</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="new_user_msg">New User? Register</string>
+    <string name="existing_user_msg">Already Registered? Login</string>
 
     <!-- General Items -->
+    <string name="back">B</string>
 
 </resources>
