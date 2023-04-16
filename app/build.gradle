@@ -16,6 +16,25 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    task copyPropertiesFile(type: Copy) {
+        from "${projectDir}/src/template/app.properties.template"
+        into "${projectDir}/src/main/assets"
+        rename { filename -> "app.properties" }
+        doLast {
+            def destFile = new File("${projectDir}/src/main/assets/app.properties")
+            if (!destFile.exists() || destFile.lastModified() < file("${projectDir}/src/template/app.properties.template").lastModified()) {
+                destFile.delete()
+                copy {
+                    from "${projectDir}/src/template/app.properties.template"
+                    into "${projectDir}/src/main/assets"
+                    rename { filename -> "app.properties" }
+                }
+            }
+        }
+    }
+
+    preBuild.dependsOn copyPropertiesFile
+
     buildTypes {
         release {
             minifyEnabled false
@@ -37,6 +56,7 @@ dependencies {
     implementation 'androidx.preference:preference:1.2.0'
     implementation 'androidx.security:security-crypto:1.0.0'
     implementation 'androidx.room:room-runtime:2.5.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
 
     annotationProcessor 'androidx.room:room-compiler:2.5.1'
 
