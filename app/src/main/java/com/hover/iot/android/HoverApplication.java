@@ -66,20 +66,18 @@ public class HoverApplication extends Application {
     /**
      * Send a request to the server to register the user.
      * @param name The user's name.
-     * @param surname The user's surname.
      * @param username The user's username.
      * @param password The user's password.
      * @param response The HttpResponseListener to use for handling the response.
      */
-    public void register(String name, String surname, String username, String password,
+    public void register(String name, String username, String password,
                          HttpResponseListener response) {
         try {
 
             JSONObject body = new JSONObject();
 
             body.put("name", name);
-            body.put("surname", surname);
-            body.put("email", username);
+            body.put("username", username);
             body.put("password", password);
 
             mHttpService.register(createUrl(ApiRoutes.Register), body.toString(), response);
