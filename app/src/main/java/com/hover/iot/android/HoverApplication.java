@@ -88,6 +88,27 @@ public class HoverApplication extends Application {
     }
 
     /**
+     * Send a request to the server to login the user.
+     * @param username The user's username.
+     * @param password The user's password.
+     * @param response The HttpResponseListener to use for handling the response.
+     */
+    public void login(String username, String password, HttpResponseListener response) {
+        try {
+
+            JSONObject body = new JSONObject();
+
+            body.put("username", username);
+            body.put("password", password);
+
+            mHttpService.login(createUrl(ApiRoutes.Login), body.toString(), response);
+
+        } catch (Exception e) {
+            response.onError(e);
+        }
+    }
+
+    /**
      * Creates an absolute URL by concatenating the server base URL with a relative URL.
      * @param relativeUrl The relative URL to be concatenated.
      * @return The absolute URL.
