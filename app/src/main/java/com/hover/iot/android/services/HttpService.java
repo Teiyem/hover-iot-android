@@ -5,6 +5,7 @@ import androidx.annotation.NonNull;
 import com.hover.iot.android.models.HttpResponseListener;
 
 import java.io.IOException;
+import java.util.Objects;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -194,8 +195,14 @@ public class HttpService {
                     listener.onError(new Exception("Error response: " + response.code() + " - " +
                             response.message()));
                 } else {
-                    assert response.body() != null;
-                    listener.onSuccess(response.body().string());
+                    String data;
+
+                    if(response.body() == null)
+                        data = null;
+                    else
+                        data = response.body().string();
+
+                    listener.onSuccess(data);
                 }
                 response.close();
             }
