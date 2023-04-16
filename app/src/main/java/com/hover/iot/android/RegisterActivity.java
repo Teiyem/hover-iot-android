@@ -195,8 +195,9 @@ public class RegisterActivity extends AppCompatActivity {
         mPasswordInput.setErrorEnabled(false);
         return true;
     }
+
     /**
-     * Animates the login and register views by translating them on the X-axis and increasing their alpha value.
+     * Animates the register views by translating them on the X-axis and increasing their alpha value.
      * The animations start with a delay to create a cascading effect.
      */
     private void onSetAnimations() {
