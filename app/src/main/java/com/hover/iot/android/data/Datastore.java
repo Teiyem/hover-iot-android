@@ -31,6 +31,7 @@ public abstract class Datastore extends RoomDatabase {
 
     /**
      * Get the singleton instance of the Datastore.
+     *
      * @param context The context of the application.
      * @return The singleton instance of the Datastore.
      */
@@ -45,6 +46,7 @@ public abstract class Datastore extends RoomDatabase {
 
     /**
      * Get the instance of the UserDao.
+     *
      * @return The UserDao object.
      */
     public abstract UserDao userDao();

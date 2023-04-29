@@ -14,7 +14,7 @@ public class Repository {
     private final UserDao mUserDao;
 
     /**
-     * Initializes a new instance of the <see ref="Repository"/> class.
+     * Initializes a new instance of the {@link Repository} class with the given application context.
      * @param application The context of the application.
      */
     public Repository(Application application) {

@@ -5,6 +5,8 @@ import android.content.res.AssetManager;
 
 import androidx.annotation.NonNull;
 
+import com.hover.iot.android.service.HttpService;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -25,7 +27,7 @@ public class PropertyManager  {
     private final Properties properties;
 
     /**
-     * Constructs a new PropertyManager with the specified context.
+     * Initializes a new instance of the {@link PropertyManager} class with the specified context.
      *
      * @param context The context used to load the properties file.
      * @throws IOException If an I/O error occurs while loading the file.

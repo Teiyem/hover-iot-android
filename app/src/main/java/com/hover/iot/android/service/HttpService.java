@@ -2,6 +2,7 @@ package com.hover.iot.android.service;
 
 import androidx.annotation.NonNull;
 
+import com.hover.iot.android.entity.User;
 import com.hover.iot.android.model.HttpResponseListener;
 
 import java.io.IOException;
@@ -35,8 +36,8 @@ public class HttpService {
     public static final MediaType APPLICATION_JSON = MediaType.get("application/json; charset=utf-8");
 
     /**
-     * Private constructor to prevent direct instantiation of HttpService.
-     * Creates a new OkHttpClient instance.
+     * Initializes a new instance of the {@link HttpService} class.
+     * It's private in order to prevent direct instantiation of HttpService.
      */
     private HttpService() {
         mClient = new OkHttpClient();
