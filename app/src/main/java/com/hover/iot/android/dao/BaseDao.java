@@ -1,4 +1,4 @@
-package com.hover.iot.android.daos;
+package com.hover.iot.android.dao;
 
 import androidx.room.Dao;
 import androidx.room.Delete;

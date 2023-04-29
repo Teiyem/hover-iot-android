@@ -1,4 +1,4 @@
-package com.hover.iot.android.models;
+package com.hover.iot.android.model;
 
 /**
  * An interface for handling HTTP responses.

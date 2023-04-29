@@ -1,12 +1,14 @@
-package com.hover.iot.android.daos;
+package com.hover.iot.android.dao;
 
+import androidx.room.Dao;
 import androidx.room.Query;
 
-import com.hover.iot.android.entities.User;
+import com.hover.iot.android.entity.User;
 
 /**
  * User data access object interface.
  */
+@Dao
 public interface UserDao extends BaseDao<User> {
 
     /**
@@ -14,6 +16,6 @@ public interface UserDao extends BaseDao<User> {
      * @param id The id of the user to retrieve.
      * @return A user.
      */
-    @Query("SELECT * FROM user WHERE id = :id")
-    User get(Integer id);
+    @Query("SELECT * FROM tbl_user WHERE id = :id")
+    User get(int id);
 }

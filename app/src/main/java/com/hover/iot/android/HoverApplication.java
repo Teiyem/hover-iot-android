@@ -4,8 +4,8 @@ import android.app.Application;
 
 import androidx.annotation.NonNull;
 
-import com.hover.iot.android.models.HttpResponseListener;
-import com.hover.iot.android.services.HttpService;
+import com.hover.iot.android.model.HttpResponseListener;
+import com.hover.iot.android.service.HttpService;
 import com.hover.iot.android.util.PropertyManager;
 import com.hover.iot.android.util.constants.ApiRoutes;
 import com.hover.iot.android.util.constants.PropertyKeys;

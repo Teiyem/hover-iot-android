@@ -1,4 +1,4 @@
-package com.hover.iot.android.entities;
+package com.hover.iot.android.entity;
 
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
@@ -16,7 +16,7 @@ public class User {
      */
     @PrimaryKey
     @ColumnInfo(name = "id")
-    private final Integer id;
+    private final int id;
 
     /**
      * The user's name.
@@ -38,7 +38,7 @@ public class User {
      * @param name The user's name.
      * @param username The user's username.
      */
-    public User(@NonNull Integer id, @NonNull String name, @NonNull String username) {
+    public User(int id, @NonNull String name, @NonNull String username) {
         this.id = id;
         this.name = name;
         this.username = username;
@@ -48,8 +48,7 @@ public class User {
      * Gets the user's ID.
      * @return The user's ID.
      */
-    @NonNull
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 

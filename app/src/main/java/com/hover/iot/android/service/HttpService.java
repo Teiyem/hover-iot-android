@@ -1,11 +1,10 @@
-package com.hover.iot.android.services;
+package com.hover.iot.android.service;
 
 import androidx.annotation.NonNull;
 
-import com.hover.iot.android.models.HttpResponseListener;
+import com.hover.iot.android.model.HttpResponseListener;
 
 import java.io.IOException;
-import java.util.Objects;
 
 import okhttp3.Call;
 import okhttp3.Callback;

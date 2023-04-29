@@ -2,8 +2,8 @@ package com.hover.iot.android.data;
 
 import android.app.Application;
 
-import com.hover.iot.android.daos.UserDao;
-import com.hover.iot.android.entities.User;
+import com.hover.iot.android.dao.UserDao;
+import com.hover.iot.android.entity.User;
 
 /**
  * A singleton class that provides access to the database data layer.

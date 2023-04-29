@@ -17,9 +17,7 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 
 import com.google.android.material.textfield.TextInputLayout;
-import com.hover.iot.android.models.HttpResponseListener;
-
-import org.jetbrains.annotations.NotNull;
+import com.hover.iot.android.model.HttpResponseListener;
 
 import java.util.Objects;
 

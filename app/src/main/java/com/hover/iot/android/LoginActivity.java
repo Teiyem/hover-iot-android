@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 
 import com.google.android.material.textfield.TextInputLayout;
-import com.hover.iot.android.models.HttpResponseListener;
+import com.hover.iot.android.model.HttpResponseListener;
 
 import org.jetbrains.annotations.NotNull;
 

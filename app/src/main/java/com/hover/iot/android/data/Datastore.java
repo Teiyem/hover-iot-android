@@ -6,8 +6,8 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-import com.hover.iot.android.daos.UserDao;
-import com.hover.iot.android.entities.User;
+import com.hover.iot.android.dao.UserDao;
+import com.hover.iot.android.entity.User;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
