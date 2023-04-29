@@ -118,4 +118,9 @@ public class HoverApplication extends Application {
     private String createUrl(@NonNull String relativeUrl) {
         return SERVER_BASE_URL + relativeUrl;
     }
+
+    public boolean isAuthenticated() {
+        //TODO hook it up
+        return false;
+    }
 }
