@@ -1,6 +1,8 @@
 # Hover Android
 Hover Android is a mobile application that provides a user-friendly interface that enables easy control and monitoring of smart home devices from an Android device. With Hover, you can manage your connected devices from the convenience of your Android device.
 
+[![CI Hover Android Build](https://github.com/Teiyem/hover-iot-android/actions/workflows/hover-iot-android-ci.yml/badge.svg)](https://github.com/Teiyem/hover-iot-android/actions/workflows/hover-iot-android-ci.yml)
+
 ## Features
 * Control and monitor smart home devices from your Android device ⚠️
 * Easily manage other connected devices.⚠️
